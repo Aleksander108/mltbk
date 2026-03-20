@@ -299,6 +299,15 @@
   }
   #age-badge.fade { opacity: 0; }
 
+  /* Mobile: when width is the constraint */
+  @media (max-aspect-ratio: 2/3) {
+    #center-text { font-size: 12vw; }
+    #loop-text-flat { font-size: 5vw; }
+    #cta-btn { font-size: 2.8vw; padding: 2vw 4vw; }
+    #motto { font-size: 3.2vw; }
+    #age-badge { width: 7vw; height: 7vw; font-size: 2.2vw; }
+  }
+
   #particles {
     position: absolute;
     inset: 0;
