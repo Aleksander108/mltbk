@@ -299,13 +299,25 @@
   }
   #age-badge.fade { opacity: 0; }
 
-  /* Mobile: when width is the constraint */
-  @media (max-aspect-ratio: 2/3) {
-    #center-text { font-size: 12vw; }
-    #loop-text-flat { font-size: 5vw; }
-    #cta-btn { font-size: 2.8vw; padding: 2vw 4vw; }
-    #motto { font-size: 3.2vw; }
-    #age-badge { width: 7vw; height: 7vw; font-size: 2.2vw; }
+  /* Mobile */
+  @media (max-width: 768px) {
+    body { height: 100dvh; }
+    #scene {
+      height: 100dvh;
+      width: 100vw;
+      max-height: none;
+    }
+    #center-text { font-size: 10vw; }
+    #loop-text-flat { font-size: 4.5vw; }
+    #cta-btn { font-size: 2.5vw; padding: 2vw 4vw; }
+    #motto { font-size: 3vw; letter-spacing: 0.05em; }
+    #age-badge { width: 8vw; height: 8vw; font-size: 2.5vw; }
+    #title-svg {
+      top: -3%;
+      left: -2%;
+      width: 104%;
+      height: 30%;
+    }
   }
 
   #particles {
